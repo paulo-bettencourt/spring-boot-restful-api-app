@@ -12,12 +12,12 @@ import java.util.List;
 @RestController
 @RequestMapping("/angularbank")
 public class ClientResource {
+
     private final ClientService clientService;
 
     public ClientResource(ClientService clientService) {
         this.clientService = clientService;
     }
-
 
     @GetMapping("/clients")
     public ResponseEntity<List<Client>> getAllClients() {

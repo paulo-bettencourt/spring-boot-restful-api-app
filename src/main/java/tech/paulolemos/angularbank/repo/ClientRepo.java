@@ -9,9 +9,7 @@ import java.util.Optional;
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 public interface ClientRepo extends JpaRepository<Client, Long> {
 
-    @CrossOrigin(origins = "*", allowedHeaders = "*")
     void deleteClientById(Long id);
-
 
     Optional<Client> findClientById(Long id);
 }
